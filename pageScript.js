@@ -1,4 +1,6 @@
 $(document).ready(function(){
+    $('.contact').hide();
+
     $('.video-tag').find("video").hide();
     $(".text-content-tag").hide();
     $('.video-tag').mouseenter(function(){
@@ -37,5 +39,27 @@ $(document).ready(function(){
     });
     $('#menuElemPartners').click(function(){
         $('html, body').animate({scrollTop: $('#Ecological_construction').offset().top + 100}, 1000);
+    })
+    $(".contact #btn_cancel").click(function(){
+        $(".contact").hide();
+        $('.header').show();
+        $('.content').show();
+        $('.footer').show();
+    })
+
+    $(".contact #contact-btnSend").click(function(){
+        alert("Đã gửi thành công dữ liệu lên hệ thông. Chúng tôi sẽ sớm liên hệ với bạn.");
+        $(".inputOneLine > input").val("");
+        $(".inputMUtilLine > textarea").val("");
+        $("#contact-inputName").attr("placeholder" , "Name");
+        $("#contact-inputEmail").attr("placeholder" , "Email");
+        $("#contact-inputPhoneNumber").attr("placeholder" , "Phone number");
+        $("#contact-inputMassage").attr("placeholder" , "Your Massage");
+    })
+    $(".btn").click(function(){
+        $(".contact").show();
+        $('.header').hide();
+        $('.content').hide();
+        $('.footer').hide();
     })
 })

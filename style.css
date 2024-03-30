@@ -446,3 +446,116 @@ body{
 .footer2 > div{
     height: fit-content;
 }
+
+.contact{
+    background-color: #83A1AE;
+    width: 100%;
+    height: 100%;
+
+}
+
+
+.contact{
+    position: fixed;
+}
+#cancel{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    position: relative;
+
+}
+#btn_cancel{
+    position: absolute;
+    right: 0px;
+    width: 50px;
+    height: 50px;
+    margin-top: 30px;
+    margin-right: 80px;
+    color: white;
+    font-size: 30px;
+    border: 1px white solid ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    z-index: 4;
+}
+#btn_cancel > p{
+    padding-bottom: 5px;
+}
+
+#btn_cancel:hover{
+    background-color: black;
+    border-radius: 15px;
+}
+
+.contact-main{
+    padding-left: 10%;
+    padding-right: 10%;
+    display: flex;
+
+}
+.contact-main-form{
+    background-color: white;
+    border-radius: 70px;
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 50px;
+}
+.contact-main-form > div{
+    margin-top: 20px;
+    margin-bottom: 10px;
+
+}
+
+
+.inputOneLine{
+    border: 0px;
+}
+.inputOneLine > input{
+    width: 80%;
+    height: 60px;
+    border-radius: 15px;
+    border: 0px;
+    background-color: rgb(235, 235, 235);
+    font-size: 18px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.inputMUtilLine > textarea{
+    width: 80%;
+    border-radius: 15px;
+    border: 0px;
+    background-color: rgb(235, 235, 235);
+    height: 150px;
+    font-size: 18px;
+    padding: 20px;
+
+    overflow-y: hidden;
+}
+#contact-btnSend{
+    width:80%;
+    height: 60px;
+    border: 0px;
+    background-color: #778e99;  
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: larger;
+    color: white;
+    font-weight: 600;
+}
+#contact-btnSend > p{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#contact-btnSend:hover{
+    background-color: black;
+    border-radius: 20px;
+}
